@@ -52,9 +52,9 @@ const Hero = () => {
   return (
     <>
       <AudaLogoIcon />
-      <div className="mt-10 flex items-center justify-center flex-col">
-        <div className="max-w-[80rem]">
-          <h3 className="text-black text-4xl lg:text-5xl font-medium xl:text-center mx-2">
+      <div className="mt-1 flex items-center justify-center flex-col ">
+        <div className="max-w-[60rem]">
+          <h3 className="text-black text-3xl lg:text-4xl font-medium xl:text-center mx-2">
             Connect, find
             <span className="main-gradient-text"> communities</span>, and grow
             <span className="main-gradient-text"> businesses</span> around your
@@ -62,19 +62,20 @@ const Hero = () => {
             <span className="main-gradient-text"> music</span> with Auda.
           </h3>
         </div>
-        <div className="mt-5 lg:mt-16 mx-2 flex flex-row ">
+        <div className="mt-5 lg:mt-10 mx-2 flex flex-row ">
           {mediumScreenSize && (
             <div>
               <Image
                 src={LightDualPhone}
                 alt="Portrait"
-                width="652"
+                width="552"
                 priority={true}
+                quality={100}
               />
             </div>
           )}
 
-          <div className="flex flex-col xl:ml-24 lg:my-16 max-w-lg ">
+          <div className="flex flex-col xl:ml-24 lg:my-16 max-w-sm ">
             <h1 className="text-black text-xl lg:text-3xl font-medium ">
               Join our mailing list to get updates as soon as they come out
             </h1>
@@ -105,7 +106,7 @@ const Hero = () => {
                 disabled={isLoading}
                 sx={{
                   background: "#0295F6",
-                  marginTop: 5,
+                  marginTop: 2,
                   textTransform: "none",
                   height: 50,
                   fontSize: 20,

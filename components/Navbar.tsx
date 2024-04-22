@@ -8,7 +8,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" flex justify-end items-center h-28 mx-auto px-4 text-white">
+    <div className=" flex justify-end items-center h-18 mx-auto px-4 text-white">
       <ul className="hidden md:flex">
         {navItems.map((item) => (
           <li

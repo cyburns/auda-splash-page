@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="mb-10 mt-16 px-4 text-gray-500 max-w-7xl">
       <div className="flex items-center justify-center text-center">
         {menuItems.map((item, index) => (
-          <p key={index} className="text-md m-5 hover:underline">
+          <p key={index} className="text-sm m-5 hover:underline">
             {item}
           </p>
         ))}
