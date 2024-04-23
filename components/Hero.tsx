@@ -54,7 +54,7 @@ const Hero = () => {
       <AudaLogoIcon />
       <div className="mt-28 flex items-center justify-center flex-col ">
         <div className="max-w-[60rem]">
-          <h3 className="text-black text-3xl lg:text-4xl font-medium xl:text-center mx-2">
+          <h3 className="text-black text-3xl lg:text-4xl font-medium xl:text-center mx-6">
             Connect, find
             <span className="main-gradient-text"> communities</span>, and grow
             <span className="main-gradient-text"> businesses</span> around your
