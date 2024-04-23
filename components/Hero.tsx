@@ -143,12 +143,12 @@ const Hero = () => {
                 Get the app.
               </h1>
             </div>
-            <div className="mt-5 flex flex-row justify-around w-full">
+            <div className="mt-5 flex flex-row justify-center w-full">
               <div>
                 <Image
                   src={AppStore}
                   alt="Portrait"
-                  className="w-44 lg:w-[14rem]"
+                  className="w-[10rem] lg:w-[13rem] pr-1"
                   priority={true}
                 />
               </div>
@@ -156,7 +156,7 @@ const Hero = () => {
                 <Image
                   src={GooglePlay}
                   alt="Portrait"
-                  className="w-44 lg:w-[14rem]"
+                  className="w-[10rem] lg:w-[13rem] pl-1"
                   priority={true}
                 />
               </div>
