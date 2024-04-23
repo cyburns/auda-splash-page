@@ -2,12 +2,13 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import LightDualPhone from "@/public/images/auda-bg-bg-bg.png";
+import LightDualPhone from "@/public/images/w-auda-text.png";
 import { TextField, Button } from "@mui/material";
 import AudaLogoIcon from "./AudaLogo";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import AppStore from "@/public/images/ap-store.png";
 import GooglePlay from "@/public/images/google-play.png";
+import AudaTextLogo from "@/public/images/auda-text-logo.png";
 import { FIREBASE_STORE } from "@/FirebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import toast from "react-hot-toast";
@@ -62,7 +63,7 @@ const Hero = () => {
             <span className="main-gradient-text"> music</span> with Auda.
           </h3>
         </div>
-        <div className="mt-5 lg:mt-10 mx-2 flex flex-row ">
+        <div className="mt-5 lg:mt-10 mx-2 flex flex-row mr-5">
           {mediumScreenSize && (
             <div>
               <Image
@@ -75,11 +76,20 @@ const Hero = () => {
             </div>
           )}
 
-          <div className="flex flex-col xl:ml-24 lg:my-16 max-w-sm ">
-            <h1 className="text-black text-xl lg:text-3xl font-medium ">
-              Join our mailing list to get updates as soon as they come out
+          <div className="flex flex-col xl:ml-24 max-w-sm ">
+            <div className="flex justify-center items-center">
+              <Image
+                src={AudaTextLogo}
+                alt="Portrait"
+                width="200"
+                priority={true}
+                quality={100}
+              />
+            </div>
+            <h1 className="text-black text-xl font-medium mt-5">
+              Join our mailing list to get updates as soon as they come out.
             </h1>
-            <div className="mt-10 flex flex-col ">
+            <div className="mt-5 flex flex-col ">
               <TextField
                 id="outlined-basic"
                 label="What's your email?"
