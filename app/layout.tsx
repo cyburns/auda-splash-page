@@ -23,7 +23,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeContextProvider>
-          <Navbar />
           {children}
           <Toaster position="top-center" />
           <div className="flex items-center justify-center">
