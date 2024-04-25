@@ -6,13 +6,10 @@ export const testimonials = [
     name: "Communities",
   },
   {
-    name: "Layout",
-  },
-  {
     name: "Music",
   },
   {
-    name: "Freinds",
+    name: "Friends",
   },
   {
     name: "Discover",
