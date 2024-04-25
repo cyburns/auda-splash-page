@@ -1,12 +1,11 @@
 "use client";
 import { cn } from "@/utils/cn";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 export const InfiniteCards = ({
   items,
   direction = "left",
   speed = "fast",
-  pauseOnHover = true,
   className,
 }: {
   items: {
@@ -17,19 +16,22 @@ export const InfiniteCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
-  function addAnimation() {
+
+  const addAnimation = () => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
+
         if (scrollerRef.current) {
           scrollerRef.current.appendChild(duplicatedItem);
         }
@@ -39,7 +41,8 @@ export const InfiniteCards = ({
       getSpeed();
       setStart(true);
     }
-  }
+  };
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -55,6 +58,7 @@ export const InfiniteCards = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -66,6 +70,7 @@ export const InfiniteCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
