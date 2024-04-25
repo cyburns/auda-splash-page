@@ -12,6 +12,7 @@ import AudaTextLogo from "@/public/images/auda-text-logo.png";
 import { FIREBASE_STORE } from "@/FirebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import toast from "react-hot-toast";
+import Info from "./Info";
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -53,8 +54,8 @@ const Hero = () => {
   return (
     <>
       <AudaLogoIcon />
-      <div className="mt-28 flex items-center justify-center flex-col ">
-        <div className="max-w-[60rem]">
+      <div className="mt-28 flex items-center flex-col">
+        {/* <div className="max-w-[60rem]">
           <h3 className="text-black text-3xl lg:text-4xl font-medium xl:text-center mx-6">
             Connect, find
             <span className="main-gradient-text"> communities</span>, and grow
@@ -62,7 +63,8 @@ const Hero = () => {
             favorite
             <span className="main-gradient-text"> music</span> with Auda.
           </h3>
-        </div>
+        </div> */}
+        <Info />
         <div className="mt-5 lg:mt-10 mx-2 flex flex-row mr-5">
           {mediumScreenSize && (
             <div>
@@ -86,7 +88,7 @@ const Hero = () => {
                 quality={100}
               />
             </div>
-            <h1 className="text-black text-xl font-medium mt-5">
+            <h1 className="text-black text-md font-medium mt-5">
               Join our mailing list to get updates as soon as they come out.
             </h1>
             <div className="mt-5 flex flex-col ">
