@@ -13,6 +13,7 @@ import { FIREBASE_STORE } from "@/FirebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import toast from "react-hot-toast";
 import Info from "./Info";
+import LightModePhones from "@/public/images/auda-white-phones.png";
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -54,31 +55,22 @@ const Hero = () => {
   return (
     <>
       <AudaLogoIcon />
-      <div className="mt-28 flex items-center flex-col">
-        {/* <div className="max-w-[60rem]">
-          <h3 className="text-black text-3xl lg:text-4xl font-medium xl:text-center mx-6">
-            Connect, find
-            <span className="main-gradient-text"> communities</span>, and grow
-            <span className="main-gradient-text"> businesses</span> around your
-            favorite
-            <span className="main-gradient-text"> music</span> with Auda.
-          </h3>
-        </div> */}
+      <div className="mt-28 flex items-center flex-col bg-white">
         <Info />
         <div className="mt-5 lg:mt-10 mx-2 flex flex-row mr-5">
           {mediumScreenSize && (
             <div>
               <Image
-                src={LightDualPhone}
+                src={LightModePhones}
                 alt="Portrait"
-                width="552"
+                width="592"
                 priority={true}
                 quality={100}
               />
             </div>
           )}
 
-          <div className="flex flex-col xl:ml-24 max-w-sm ">
+          <div className="flex flex-col max-w-sm xl:mr-20">
             <div className="flex justify-center items-center">
               <Image
                 src={AudaTextLogo}
@@ -96,7 +88,7 @@ const Hero = () => {
                 id="outlined-basic"
                 label="What's your email?"
                 variant="outlined"
-                sx={{ background: "#FAFAFA" }}
+                sx={{ background: "#fafafa" }}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -104,7 +96,7 @@ const Hero = () => {
                 id="outlined-basic"
                 label="What's your full name?"
                 variant="outlined"
-                sx={{ background: "#FAFAFA", marginTop: 1 }}
+                sx={{ background: "#fafafa", marginTop: 1, color: "#fff" }}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />

@@ -21,9 +21,7 @@ const Info = () => {
         className="text-3xl px-4 md:text-4xl lg:text-5xl font-bold  text-black max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
         Connect, find communities, and grow businesses around your favorite{" "}
-        <Highlight className="text-black dark:text-white">
-          music with Auda
-        </Highlight>
+        <Highlight className="text-white">music with Auda.</Highlight>
       </motion.h1>
     </HeroHighlight>
   );
