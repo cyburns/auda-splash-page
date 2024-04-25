@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <>
       <AudaLogoIcon />
-      <div className="mt-28 flex items-center flex-col bg-white">
+      <div className="mt-56 lg:mt-28 flex items-center flex-col bg-white">
         <Info />
         <div className="mt-5 lg:mt-10 mx-2 flex flex-row mr-5">
           {mediumScreenSize && (
@@ -168,6 +168,17 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {!mediumScreenSize && (
+        <div className="w-full mt-10">
+          <Image
+            src={LightModePhones}
+            alt="Portrait"
+            width="592"
+            priority={true}
+            quality={100}
+          />
+        </div>
+      )}
     </>
   );
 };

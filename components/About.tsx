@@ -7,7 +7,7 @@ import { InfiniteCards } from "./ui/InfiniteCards";
 
 const About = () => {
   return (
-    <div className="h-[40rem] w-screen flex flex-col antialiased items-center justify-center relative overflow-hidden lg:mt-32">
+    <div className="h-[30rem] w-screen flex flex-col antialiased items-center justify-center relative overflow-hidden ">
       <InfiniteCards items={testimonials} direction="left" speed="slow" />
     </div>
   );

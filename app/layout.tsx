@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Auda music",
+  title: "Auda",
   description: "Share and discover music with your friends.",
 };
 
