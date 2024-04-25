@@ -1,5 +1,7 @@
 "use client";
 
+import { testimonials } from "@/constants/data";
+
 import React from "react";
 import { InfiniteCards } from "./ui/InfiniteCards";
 
@@ -10,29 +12,5 @@ const About = () => {
     </div>
   );
 };
-
-const testimonials = [
-  {
-    name: "Connect",
-  },
-  {
-    name: "Communities",
-  },
-  {
-    name: "Layout",
-  },
-  {
-    name: "Music",
-  },
-  {
-    name: "Freinds",
-  },
-  {
-    name: "Discover",
-  },
-  {
-    name: "Share",
-  },
-];
 
 export default About;
