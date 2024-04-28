@@ -18,7 +18,7 @@ const Info = () => {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold  text-black max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto lg:mb-0 mb-10"
+        className="text-4xl px-4 md:text-4xl lg:text-4xl font-bold  text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto lg:mb-0 mb-5"
       >
         Connect, find communities, and grow businesses around your favorite{" "}
         <Highlight className="text-white">music with Auda.</Highlight>

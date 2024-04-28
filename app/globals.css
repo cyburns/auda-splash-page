@@ -43,11 +43,15 @@ html.dark {
 }
 
 .hover-main-text-grad {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .hover-main-text-grad:hover {
   background: linear-gradient(90deg, #52f1cf, #358ff8, #fc73ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.black-gradient-background {
+  background: linear-gradient(90deg, #303030, #303030);
 }

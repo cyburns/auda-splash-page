@@ -8,12 +8,15 @@ import AudaLogoIcon from "./AudaLogo";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import AppStore from "@/public/images/ap-store.png";
 import GooglePlay from "@/public/images/google-play.png";
-import AudaTextLogo from "@/public/images/auda-text-logo.png";
 import { FIREBASE_STORE } from "@/FirebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import toast from "react-hot-toast";
 import Info from "./Info";
+import AudaTextLogo from "@/public/images/auda-text-logo.png";
+import WhiteAudaText from "@/public/images/white-auda-text.png";
 import LightModePhones from "@/public/images/auda-white-phones.png";
+import DarkModePhones from "@/public/images/auda-bg-bg-bg.png";
+import DarkBackgroundImage from "@/public/images/auda-bg-collage-lg.png";
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -54,14 +57,24 @@ const Hero = () => {
 
   return (
     <>
-      <AudaLogoIcon />
-      <div className="mt-56 lg:mt-28 flex items-center flex-col bg-white">
-        <Info />
+      <div
+        className=" flex items-center flex-col"
+        style={{
+          backgroundImage: `url(${DarkBackgroundImage.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "100vh",
+        }}
+      >
+        <div className="mt-24">
+          <Info />
+        </div>
         <div className="mt-5 lg:mt-10 mx-2 flex flex-row mr-5">
           {mediumScreenSize && (
             <div>
               <Image
-                src={LightModePhones}
+                src={DarkModePhones}
                 alt="Portrait"
                 width="592"
                 priority={true}
@@ -73,14 +86,14 @@ const Hero = () => {
           <div className="flex flex-col max-w-sm xl:mr-20">
             <div className="flex justify-center items-center">
               <Image
-                src={AudaTextLogo}
+                src={WhiteAudaText}
                 alt="Portrait"
                 width="200"
                 priority={true}
                 quality={100}
               />
             </div>
-            <h1 className="text-black text-md font-medium mt-5">
+            <h1 className="text-black text-md font-medium">
               Join our mailing list to get updates as soon as they come out.
             </h1>
             <div className="mt-5 flex flex-col ">

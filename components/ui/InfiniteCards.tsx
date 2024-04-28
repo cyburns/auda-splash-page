@@ -91,7 +91,7 @@ export const InfiniteCards = ({
             <blockquote>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-[15rem] leading-[1.6] mr-24  hover-main-text-grad font-medium">
+                  <span className=" text-[15rem] leading-[1.6] mr-24  hover-main-text-grad font-medium ">
                     {item.name}
                   </span>
                 </span>
