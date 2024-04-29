@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import AudaLogo from "@/public/images/auda-logo-v3.png";
+import AudaLogo from "@/public/images/auda-logo-no-bg.png";
 
 export default function AudaLogoIcon() {
   return (
@@ -8,7 +8,7 @@ export default function AudaLogoIcon() {
       <Image
         src={AudaLogo}
         alt="Portrait"
-        className="w-24 xl:w-32"
+        className="w-24 xl:w-44"
         priority={true}
       />
     </div>

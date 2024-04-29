@@ -7,7 +7,7 @@ import { InfiniteCards } from "./ui/InfiniteCards";
 
 const About = () => {
   return (
-    <div className="h-[40rem] gradient-background  w-screen flex flex-col antialiased items-center justify-center relative overflow-hidden mt-24 rounded-[8rem] mx-24">
+    <div className="h-[40rem] bg-black w-screen flex flex-col antialiased items-center justify-center relative overflow-hidden border-t-8">
       <InfiniteCards items={testimonials} direction="left" speed="slow" />
     </div>
   );

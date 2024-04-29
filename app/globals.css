@@ -53,5 +53,9 @@ html.dark {
 }
 
 .black-gradient-background {
-  background: linear-gradient(90deg, #303030, #303030);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+.placeholder-white::placeholder {
+  color: #fff;
 }

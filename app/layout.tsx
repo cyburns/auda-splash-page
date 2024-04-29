@@ -23,9 +23,6 @@ export default function RootLayout({
         <ThemeContextProvider>
           {children}
           <Toaster position="top-center" />
-          <div className="flex items-center justify-center">
-            <Footer />
-          </div>
         </ThemeContextProvider>
       </body>
     </html>
